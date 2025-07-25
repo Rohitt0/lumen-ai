@@ -16,12 +16,12 @@ body {
 /* The main container for the glowing background and content */
 .main-container {
     position: relative;
+    /* Use dynamic viewport height for better mobile support */
+    height: 100dvh; 
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; This is handled by flex-grow on main now */
     padding: 0 1rem;
     z-index: 1;
     box-sizing: border-box; /* Ensures padding is included in the dimensions */
@@ -59,17 +59,17 @@ main::-webkit-scrollbar-thumb:hover {
 }
 
 .main-heading {
-    @apply text-4xl font-extralight text-white leading-8 md:text-6xl;
+    @apply text-3xl font-extralight text-white leading-8 md:text-6xl;
 }
 
 .special-font {
-    @apply text-4xl font-extralight leading-8 md:text-6xl;
+    @apply text-3xl font-extralight leading-8 md:text-6xl;
     font-family: 'Instrument Serif', serif;
     font-style: italic;
 }
 
 .sub-heading {
-    @apply text-2xl mt-4 text-gray-400 md:text-xl;
+    @apply mt-4 text-lg text-gray-400 md:text-xl;
     font-family: 'Inter', sans-serif;
     font-size: 17px;
 }
@@ -79,11 +79,9 @@ main::-webkit-scrollbar-thumb:hover {
     font-family: 'Inter', sans-serif;
 }
 
-@media (max-width: 640px) {
-    .prompt-box {
-        @apply w-full max-w-3xl pb-2 shrink-0; /* Added shrink-0 */
-        font-family: 'Inter', sans-serif;
-    }
+.prompt-box {
+    @apply w-full max-w-3xl pb-2 shrink-0; /* Use a smaller padding-bottom */
+    font-family: 'Inter', sans-serif;
 }
 
 /* --- NEW STYLES FOR THE GEMINI RESPONSE BOX --- */
@@ -105,4 +103,15 @@ main::-webkit-scrollbar-thumb:hover {
     height: 40%;
     z-index: -1;
     pointer-events: none;
+}
+
+/* --- RESPONSIVE FIX FOR MOBILE --- */
+@media (max-width: 640px) {
+    .main-container {
+        padding: 0 0.5rem; /* Reduce side padding on small screens */
+    }
+
+    main {
+        padding: 0.5rem; /* Reduce padding inside the scrollable area */
+    }
 }

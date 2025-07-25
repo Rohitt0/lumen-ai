@@ -5,8 +5,7 @@
 
 
 /* Custom styles for the page */
-html, body {
-    height: 100%;
+body {
     font-family: 'Inter', sans-serif;
     background-color: #0D0D0D;
     color: #E5E7EB; /* A light gray for better readability */
@@ -17,8 +16,8 @@ html, body {
 /* The main container for the glowing background and content */
 .main-container {
     position: relative;
-    /* Use height: 100% to fill the body, which better handles keyboard resizing */
-    height: 100%; 
+    /* Use dynamic viewport height for better mobile support */
+    height: 100dvh; 
     width: 100vw;
     display: flex;
     flex-direction: column;

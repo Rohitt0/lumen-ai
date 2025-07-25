@@ -79,9 +79,11 @@ main::-webkit-scrollbar-thumb:hover {
     font-family: 'Inter', sans-serif;
 }
 
-.prompt-box {
-    @apply w-full max-w-3xl pb-5 shrink-0; /* Added shrink-0 */
-    font-family: 'Inter', sans-serif;
+@media (max-width: 640px) {
+    .prompt-box {
+        @apply w-full max-w-3xl pb-2 shrink-0; /* Added shrink-0 */
+        font-family: 'Inter', sans-serif;
+    }
 }
 
 /* --- NEW STYLES FOR THE GEMINI RESPONSE BOX --- */

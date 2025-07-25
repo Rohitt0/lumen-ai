@@ -25,7 +25,6 @@ body {
     padding: 0 1rem;
     z-index: 1;
     box-sizing: border-box; /* Ensures padding is included in the dimensions */
-    padding-top: 1rem;
 }
 
 /* --- STYLES FOR SCROLLING --- */

@@ -11,7 +11,7 @@ const AboutPage = ({ onNavigate }) => {
       >
         <h1 style={{ fontSize: '3rem', fontWeight: 'bold', fontFamily: 'Playfair Display, serif' }}><u>About</u></h1>
         <p style={{ maxWidth: '600px', marginTop: '1rem', fontSize: '1.1rem', lineHeight: '1.6' }}>
-          Lumen AI is a modern, intuitive chatbot designed to be your creative and intellectual partner. Fueled by powerful algorithms and a desire to help, Lumen is here to assist you in solving mysteries, brainstorming ideas, writing code, and much more. Our goal is to provide a seamless and intelligent conversational experience that feels both powerful and personal.
+          Lumen AI is a modern and intuitive chatbot designed to be a creative and intellectual partner. It is fueled by powerful algorithms and aims to provide a seamless, intelligent, and personal conversational experience. The chatbot can assist with solving mysteries, brainstorming ideas, writing code, and more.
         </p>
         <button onClick={() => onNavigate('home')} style={{ marginTop: '2rem', color: 'lightblue', background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem' }}>
           &larr; Back to Home

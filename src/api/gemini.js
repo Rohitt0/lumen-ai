@@ -11,10 +11,12 @@ const fileToGenerativePart = async (file) => {
 };
 
 
-  @param {string} message 
-  @param {File[]} files 
-  @returns {Promise<string>} 
- 
+ /**
+ * @param {string} message
+ * @param {File[]} files
+ * @returns {Promise<string>}
+ */
+
 export const callGeminiApi = async (message, files) => {
     console.log("Sending to Gemini:", message);
 

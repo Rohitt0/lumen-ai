@@ -54,7 +54,7 @@ const LandingPage = ({ onNavigate }) => {
                 </nav>
             </motion.header>
 
-            <main className="text-center px-4 flex-grow flex flex-col items-center justify-start pt-24 pb-32 overflow-y-auto">
+            <main className="text-center px-4 flex-grow flex flex-col items-center justify-center">
 
                 <div className="w-full max-w-4xl mx-auto mb-8">
                     {(geminiResponse || isLoading) && (

@@ -4,6 +4,10 @@ Lumen AI is a simple and modern AI assistant built with **React** and **Vite**.
 
 It allows you to ask questions, brainstorm ideas, write or understand code, summarize text, get advice, and send files/images along with your prompts. Lumen AI uses the **Google Gemini API** to generate responses.
 
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/dd852ef8-e014-43dd-8728-910fa37d1450" />
+
+Try here: https://lumen-ai-delta.vercel.app
+
 ##  Features
 
 * 💬 Ask questions and chat with AI
